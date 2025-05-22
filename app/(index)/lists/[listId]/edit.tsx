@@ -1,14 +1,14 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from "react";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import React, { useEffect } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 
+import Button from "@/components/ui/button";
+import TextInput from "@/components/ui/text-input";
 import { useListCreation } from "@/context/ListCreationContext";
 import { useShoppingListValue } from "@/stores/ShoppingListStore";
 import { StatusBar } from "expo-status-bar";
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
 
 export default function EditScreen() {
   const router = useRouter();

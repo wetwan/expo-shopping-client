@@ -1,16 +1,16 @@
 /* eslint-disable import/no-named-as-default */
-import { useRef, useState } from "react";
 import {
   BarcodeScanningResult,
   CameraView,
   useCameraPermissions,
 } from "expo-camera";
 import { useRouter } from "expo-router";
+import { useRef, useState } from "react";
 import { StyleSheet, View } from "react-native";
 
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
 import { useJoinShoppingListCallback } from "@/stores/ShoppingListsStore";
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
 
 export default function ScanQRCode() {
   const [permission, requestPermission] = useCameraPermissions();
@@ -43,7 +43,7 @@ export default function ScanQRCode() {
       router.dismiss();
     }
     router.push({
-      pathname: '/lists/[listId]',
+      pathname: "/lists/[listId]",
       params: { listId: qrCodeDetected },
     });
   };

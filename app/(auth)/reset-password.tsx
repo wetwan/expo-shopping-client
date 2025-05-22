@@ -1,7 +1,6 @@
-
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
+import TextInput from "@/components/ui/text-input";
 import { isClerkAPIResponseError, useSignIn } from "@clerk/clerk-expo";
 import { ClerkAPIError } from "@clerk/types";
 import { useRouter } from "expo-router";

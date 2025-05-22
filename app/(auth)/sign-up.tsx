@@ -1,7 +1,7 @@
 /* eslint-disable import/no-named-as-default */
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
+import TextInput from "@/components/ui/text-input";
 import { useSignUp } from "@clerk/clerk-expo";
 import { ClerkAPIError } from "@clerk/types";
 import { useRouter } from "expo-router";
@@ -119,7 +119,11 @@ const SignUp = () => {
 
       <View style={{ marginTop: 40, alignItems: "center" }}>
         <ThemedText> Already have an account</ThemedText>
-        <Button onPress={() => router.push("/(auth)")} variant="outline" style={{marginTop: 10}}>
+        <Button
+          onPress={() => router.push("/(auth)")}
+          variant="outline"
+          style={{ marginTop: 10 }}
+        >
           Sign In
         </Button>
       </View>

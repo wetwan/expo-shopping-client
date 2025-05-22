@@ -14,12 +14,12 @@ import {
   View,
 } from "react-native";
 
+import { ThemedText } from "@/components/ThemedText";
+import { IconSymbol } from "@/components/ui/IconSymbol";
+import Button from "@/components/ui/button";
 import { appleBlue, appleRed } from "@/constants/Colors";
 import { useClerk, useUser } from "@clerk/clerk-expo";
 import { StatusBar } from "expo-status-bar";
-import { ThemedText } from "@/componets/ThemedText";
-import { IconSymbol } from "@/componets/ui/IconSymbol";
-import Button from "@/componets/ui/button";
 
 export default function ProfileScreen() {
   const { user } = useUser();

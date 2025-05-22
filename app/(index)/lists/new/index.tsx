@@ -1,14 +1,14 @@
-import React, { useMemo, useState } from "react";
 import { Href, useGlobalSearchParams, useRouter } from "expo-router";
-import { ScrollView, StyleSheet, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
+import React, { useMemo, useState } from "react";
+import { ScrollView, StyleSheet, View } from "react-native";
 
+import { IconCircle } from "@/components/iconCircle";
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
+import TextInput from "@/components/ui/text-input";
 import { backgroundColors, emojies } from "@/constants/Colors";
 import { useJoinShoppingListCallback } from "@/stores/ShoppingListsStore";
-import { IconCircle } from "@/componets/iconCircle";
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
 
 const isValidUUID = (id: string | null) => {
   if (!id) return false;

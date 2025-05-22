@@ -1,17 +1,17 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { View, Text, FlatList, ScrollView, Pressable } from "react-native";
-import React from "react";
-import { Stack, useLocalSearchParams, useRouter } from "expo-router";
-import { ThemedText } from "@/componets/ThemedText";
+import ShoppingListProductItem from "@/components/ShoppingListProductItem";
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
+import { IconSymbol } from "@/components/ui/IconSymbol";
 import {
   useShoppingListProductIds,
   useShoppingListValue,
 } from "@/stores/ShoppingListStore";
-import Button from "@/componets/ui/button";
+import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import React from "react";
+import { Pressable, ScrollView, View } from "react-native";
 import Animated from "react-native-reanimated";
-import { IconSymbol } from "@/componets/ui/IconSymbol";
-import ShoppingListProductItem from "@/componets/ShoppingListProductItem";
 
 const ListScreen = () => {
   const router = useRouter();

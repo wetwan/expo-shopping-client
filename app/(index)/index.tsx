@@ -1,21 +1,20 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable import/no-named-as-default */
-import { IconCircle } from "@/componets/iconCircle";
-import ShoppingListItem from "@/componets/shoppinglistitem";
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
-import { IconSymbol } from "@/componets/ui/IconSymbol";
+import { IconCircle } from "@/components/iconCircle";
+import ShoppingListItem from "@/components/shoppinglistitem";
+import Button from "@/components/ui/button";
+import { IconSymbol } from "@/components/ui/IconSymbol";
 import { appleBlue, backgroundColors } from "@/constants/Colors";
 import { useShoppingListIds } from "@/stores/ShoppingListsStore";
 import { useClerk } from "@clerk/clerk-expo";
-import { Link, Stack, useRouter } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 import React from "react";
 import {
   FlatList,
+  Platform,
   Pressable,
   ScrollView,
   StyleSheet,
-  Platform,
 } from "react-native";
 
 const HomescreenLayOut = () => {

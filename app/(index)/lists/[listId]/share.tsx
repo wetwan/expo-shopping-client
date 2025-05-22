@@ -3,9 +3,9 @@ import { useLocalSearchParams } from "expo-router";
 import { ScrollView, Share, StyleSheet, View } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
 import { StatusBar } from "expo-status-bar";
-import { ThemedText } from "@/componets/ThemedText";
-import Button from "@/componets/ui/button";
 export default function ShareListScreen() {
   const { listId } = useLocalSearchParams() as { listId: string };
 

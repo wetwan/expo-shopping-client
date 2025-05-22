@@ -1,15 +1,15 @@
 /* eslint-disable import/no-named-as-default */
-import React from "react";
-import { router, useLocalSearchParams } from "expo-router";
-import { ScrollView, View } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import { ThemedText } from "@/components/ThemedText";
+import TextInput from "@/components/ui/text-input";
 import {
   useShoppingListProductCell,
   useShoppingListProductCreatedByNickname,
   useShoppingListUserNicknames,
 } from "@/stores/ShoppingListStore";
-import { ThemedText } from "@/componets/ThemedText";
-import TextInput from "@/componets/ui/text-input";
+import { router, useLocalSearchParams } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { ScrollView, View } from "react-native";
 
 export default function ProductScreen() {
   const { listId, productId } = useLocalSearchParams() as {

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-named-as-default */
-import Button from "@/componets/ui/button";
+import Button from "@/components/ui/button";
 import { ListCreationProvider } from "@/context/ListCreationContext";
 import ShoppingListsStore from "@/stores/ShoppingListsStore";
 import { useUser } from "@clerk/clerk-expo";

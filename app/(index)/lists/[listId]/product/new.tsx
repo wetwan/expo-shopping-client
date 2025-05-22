@@ -1,13 +1,13 @@
 /* eslint-disable import/no-named-as-default */
-import React, { useState } from "react";
 import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import React, { useState } from "react";
 import { Platform, ScrollView, View } from "react-native";
 
+import { ThemedText } from "@/components/ThemedText";
+import Button from "@/components/ui/button";
+import { IconSymbol } from "@/components/ui/IconSymbol";
+import TextInput from "@/components/ui/text-input";
 import { useAddShoppingListProductCallback } from "@/stores/ShoppingListStore";
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
-import { ThemedText } from "@/componets/ThemedText";
-import { IconSymbol } from "@/componets/ui/IconSymbol";
 
 export default function NewItemScreen() {
   const { listId } = useLocalSearchParams() as { listId: string };

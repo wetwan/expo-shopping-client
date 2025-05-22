@@ -2,8 +2,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable import/no-named-as-default */
 
-import Button from "@/componets/ui/button";
-import TextInput from "@/componets/ui/text-input";
+import Button from "@/components/ui/button";
+import TextInput from "@/components/ui/text-input";
 import { backgroundColors, emojies } from "@/constants/Colors";
 import { useListCreation } from "@/context/ListCreationContext";
 import { useAddShoppingListCallback } from "@/stores/ShoppingListsStore";
